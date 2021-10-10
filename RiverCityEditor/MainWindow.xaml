@@ -1,0 +1,30 @@
+﻿<Window x:Class="RiverCityEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RiverCityEditor"
+        mc:Ignorable="d"
+        Title="River City Editor" Height="450" Width="800">
+    <Grid>
+        <DataGrid HorizontalAlignment="Left" Height="335" VerticalAlignment="Top" Width="772" Margin="10,49,0,0" Grid.ColumnSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="Stamina" Binding="{Binding Stamina}" />
+                <DataGridTextColumn Header="Punch" Binding="{Binding Punch}" />
+                <DataGridTextColumn Header="Kick" Binding="{Binding Kick}" />
+                <DataGridTextColumn Header="Weapon" Binding="{Binding Weapon}" />
+                <DataGridTextColumn Header="Throwing" Binding="{Binding Throwing}" />
+                <DataGridTextColumn Header="Agility" Binding="{Binding Agility}" />
+                <DataGridTextColumn Header="Defense" Binding="{Binding Defense}" />
+                <DataGridTextColumn Header="Strength" Binding="{Binding Strength}" />
+                <DataGridTextColumn Header="Willpower" Binding="{Binding Willpower}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Open Rom" HorizontalAlignment="Left" x:Name="OpenRomButton" VerticalAlignment="Top" Width="75" Margin="707,24,0,0" Click="Button_Click"/>
+        <StatusBar x:Name="CurrentStatusBar" HorizontalAlignment="Left" Height="30" Margin="0,389,0,0" VerticalAlignment="Top" Width="792" Grid.ColumnSpan="2">
+            <TextBlock Name="StatusbarText" Text="Waiting On File." ></TextBlock>
+        </StatusBar>
+    </Grid>
+
+</Window>

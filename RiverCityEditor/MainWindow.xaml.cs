@@ -33,7 +33,6 @@ namespace RiverCityEditor
             {
                 directory = OFD.FileName;
 
-
                 if (directory.Length > 8)
                 {
                     currentRom.romByes = new List<byte>(File.ReadAllBytes(directory));

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RiverCityEditor
 {
-    class RomFile
+    public class RomFile
     {
         public List<byte> romByes;
 

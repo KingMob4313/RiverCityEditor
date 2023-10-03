@@ -55,7 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Gang.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="RomFile.cs" />
+    <Compile Include="Store.cs" />
+    <Compile Include="StoreMenu.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

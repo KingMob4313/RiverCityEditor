@@ -55,8 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GameData.cs" />
     <Compile Include="Gang.cs" />
+    <Compile Include="HexToAsciiTranslator.cs" />
     <Compile Include="Product.cs" />
+    <Compile Include="RiverCityEditor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RiverCityEditor.resx</DependentUpon>
+    </Compile>
     <Compile Include="RomFile.cs" />
     <Compile Include="Store.cs" />
     <Compile Include="StoreMenu.cs" />
@@ -91,6 +98,10 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RiverCityEditor.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RiverCityEditor.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
